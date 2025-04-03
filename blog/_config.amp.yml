@@ -1,7 +1,7 @@
 # Site settings
 title: GIZ! Blog
 tagline: "cacatan interaksi manusia dan/dengan/atau/tanpa komputer"
-url: "https://blog.gizipp.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+url: "https://gilangr.gizipp.com/gizipp" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 # Social
 socialimg: /assets/site/social.jpg # be sure to change this image
@@ -25,7 +25,7 @@ analytics_id: UA-29500251-14
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json, draft]
 
-baseurl: "/amp" # the subpath of your site, e.g. /blog
+baseurl: "/blog/amp" # the subpath of your site, e.g. /blog
 permalink: /:title
 
 include:
@@ -51,4 +51,4 @@ plugins:
 
 
 amp: true
-destination: _site/amp
+destination: _site/blog/amp
