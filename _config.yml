@@ -27,6 +27,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-minifier
+  - jemoji
 
 include:
   - '_pages'
