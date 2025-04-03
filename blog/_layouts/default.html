@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+{%- if site.amp -%}
+<html ⚡ lang="en">
+{%- else -%}
+<html lang="en">
+{%- endif -%}
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}
+
+    {{ content }}
+
+    {%- if jekyll.environment == "production" -%}
+      {%- if site.amp -%}
+        {%- include custom-js-amp.html -%}
+      {%- else -%}
+        {%- include custom-js.html -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- include consent.html -%}
+  </body>
+</html>

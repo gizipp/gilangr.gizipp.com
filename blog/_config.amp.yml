@@ -1,0 +1,48 @@
+# Site settings
+title: GIZ! Blog
+tagline: "cacatan interaksi manusia dan/dengan/atau/tanpa komputer"
+url: "https://blog.gizipp.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+
+# Social
+socialimg: /assets/site/social.jpg # be sure to change this image
+facebook: gizipp
+twitter: gizipp
+github: gizipp
+googleplus: gizipp
+instagram: gizipp
+logo: "/android-chrome-192x192.png"
+
+# Contact
+phone: "916-276-1044" # This is my real number. You should text me.
+email: "gmail@gizipp.com" # This is my real email address. Please don't email me.
+
+# GA
+analytics_id: UA-29500251-14
+
+# Use this for production
+#sass:
+#    style: :compressed
+
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json, draft]
+
+baseurl: "/amp" # the subpath of your site, e.g. /blog
+permalink: /:title
+
+include:
+  - '_pages'
+  - '_redirects'
+
+markdown: kramdown
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-minifier
+  - jemoji
+
+
+amp: true
+destination: _site/amp

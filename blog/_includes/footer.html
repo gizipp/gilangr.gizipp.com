@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <div class="page-links">
+    {%- for my_page in (site.pages -%}
+      {%- if my_page.title
+             and my_page.title != "Cheatsheets"
+             and my_page.title != "Ruby Cheatsheets"
+             and my_page.title != "Ruby on Rails Cheatsheets"
+             and my_page.title != "RSpec Cheatsheets"
+             and my_page.title != "Rbenv"
+             and my_page.title != "Errors"
+             and my_page.title != "Rbenv Cheatsheets"
+             and my_page.title != "Capistrano Errors"
+             and my_page.title != "CI/CD Cheatsheets"
+      -%}
+      <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> •
+      {%- endif -%}
+    {%- endfor -%}
+    <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Subscribe</span></a>
+  </div>
+    <div class="inner">
+      <section class="copyright">
+        Lisensi <a href="https://github.com/gizipp/blog.gizipp.com" target="_blank">Sumber Terbuka</a>
+        <a href="mailto:{{ site.email}}">{{ site.name }}</a> &copy; 2008 - {{ site.time | date: '%Y' }} &bull;
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY NC</a>.
+      </section>
+    </div>
+</footer>

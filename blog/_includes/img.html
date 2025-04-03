@@ -1,0 +1,11 @@
+{%- if site.amp -%}
+  <amp-img width="640"
+           height="427"
+           layout="responsive"
+           src="{{ include.img }}"></amp-img>
+{%- else -%}
+  <figure>
+    <img layout="responsive" src="{{ include.img }}" class="responsive" alt="{{ include.caption }}">
+    <figcaption>{{ include.caption }}</figcaption>
+  </figure>
+{%- endif -%}
