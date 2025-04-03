@@ -8,4 +8,5 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-sitemap'
   gem 'jekyll-minifier'
+  gem 'jemoji'
 end

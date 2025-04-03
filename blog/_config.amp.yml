@@ -32,6 +32,12 @@ include:
   - '_pages'
   - '_redirects'
 
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
 markdown: kramdown
 
 jekyll-minifier:

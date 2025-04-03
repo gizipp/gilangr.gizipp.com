@@ -36,3 +36,8 @@ include:
 exclude:
  - README.md
  - LICENSE
+ - vendor
+ - Gemfile
+ - Gemfile.lock
+ - node_modules
+ - blog

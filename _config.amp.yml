@@ -36,6 +36,11 @@ exclude:
  - README.md
  - LICENSE
  - admin
+ - vendor
+ - Gemfile
+ - Gemfile.lock
+ - node_modules
+ - blog
 
 amp: true
 destination: _site/amp
